@@ -1,0 +1,117 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:  var(--Pale-blue);
+    .main{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        .container{
+            background-color: white ;
+            height: 690px;
+            width: 450px;
+            border-radius: 15px;
+
+            .img-principal{
+                background-image: url(../images/illustration-hero.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 220px;
+                border-radius: 15px 15px 0 0;
+                
+            }
+            .title{
+                text-align: center;
+                font-size: 32px;
+                font-weight: 900;
+                margin: 30px 0 0;
+                
+            }
+            .text{
+                font-size: 16px;
+                font-weight: 700;
+                margin: 20px 55px;
+                text-align: center;
+                color: var(--text);
+                line-height: 1.8rem;
+            }
+            .valor{
+                border-radius: 12px;
+                background-color: var(--Very-pale-blue);
+                height: 9%;
+
+                margin: 0 30px 10px 30px;
+                padding: 10px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .icon-music{
+                    margin: 0 20px;
+                }
+                .valor-text{
+                    font-weight: 700;
+                    font-size: 15px;
+                    .valor-annual{
+                        font-size: 18px;
+                    }
+                    .valor-real{
+                        color: var(--text);
+                    }
+                }
+                .charge{
+                    font-weight: 900;
+                    color: var(--Bright-blue);
+                    margin: 0 20px;
+                }
+
+            }
+            .btn{
+                display: block;
+                margin: 20px auto;
+                width: 90%;
+                border-radius: 15px;
+                height: 60px;
+                background-color: var(--Bright-blue);
+                border: none;
+
+                &:hover{
+                    background-color: var(--hover);
+                }
+                
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+            }
+            .cancelar{
+                display: block;
+                text-align: center;
+
+                a{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: var(--text);
+                    text-decoration: none;
+                }
+                
+            }
+
+            .final{
+                font-size: 11px;
+                display:block;
+                text-align: center;
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

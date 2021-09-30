@@ -1,0 +1,46 @@
+@media(max-width: 375px){
+
+    body{
+        .main{
+            height: 1000px;
+            
+            .container{
+                width: 95%;
+                height: 600px;
+
+                .img-principal{
+                    height: 180px;
+                }
+                .title{
+                    margin: 20px 0 0;
+                    
+                    font-size: 27px;
+                }
+                .text{
+                   margin: 5% 5%; 
+                }
+                .valor{
+                    margin: 0 5% 5% 5%;
+                    .icon-music{
+                        margin: 0 3%;
+                    }
+
+                    .valor-text{
+                        .valor-annual{
+                            font-size: 16px;
+                        }
+                    }
+                    .charge{
+                        margin: 0 3%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// *{
+//     font-size: 14px;
+//     border: 2px solid red;
+// }

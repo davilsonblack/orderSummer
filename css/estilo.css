@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --text: rgb(143,143,143);
+  --hover: rgba(56, 41, 224, 0.700);
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--Pale-blue);
+}
+body .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .main .container {
+  background-color: white;
+  height: 690px;
+  width: 450px;
+  border-radius: 15px;
+}
+body .main .container .img-principal {
+  background-image: url(../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+}
+body .main .container .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 30px 0 0;
+}
+body .main .container .text {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 55px;
+  text-align: center;
+  color: var(--text);
+  line-height: 1.8rem;
+}
+body .main .container .valor {
+  border-radius: 12px;
+  background-color: var(--Very-pale-blue);
+  height: 9%;
+  margin: 0 30px 10px 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .container .valor .icon-music {
+  margin: 0 20px;
+}
+body .main .container .valor .valor-text {
+  font-weight: 700;
+  font-size: 15px;
+}
+body .main .container .valor .valor-text .valor-annual {
+  font-size: 18px;
+}
+body .main .container .valor .valor-text .valor-real {
+  color: var(--text);
+}
+body .main .container .valor .charge {
+  font-weight: 900;
+  color: var(--Bright-blue);
+  margin: 0 20px;
+}
+body .main .container .btn {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 15px;
+  height: 60px;
+  background-color: var(--Bright-blue);
+  border: none;
+}
+body .main .container .btn:hover {
+  background-color: var(--hover);
+}
+body .main .container .btn a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+body .main .container .cancelar {
+  display: block;
+  text-align: center;
+}
+body .main .container .cancelar a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+body .main .container .final {
+  font-size: 11px;
+  display: block;
+  text-align: center;
+}
+body .main .container .final a {
+  font-size: 10px;
+}
+
+@media (max-width: 375px) {
+  body .main {
+    height: 1000px;
+  }
+  body .main .container {
+    width: 95%;
+    height: 600px;
+  }
+  body .main .container .img-principal {
+    height: 180px;
+  }
+  body .main .container .title {
+    margin: 20px 0 0;
+    font-size: 27px;
+  }
+  body .main .container .text {
+    margin: 5% 5%;
+  }
+  body .main .container .valor {
+    margin: 0 5% 5% 5%;
+  }
+  body .main .container .valor .icon-music {
+    margin: 0 3%;
+  }
+  body .main .container .valor .valor-text .valor-annual {
+    font-size: 16px;
+  }
+  body .main .container .valor .charge {
+    margin: 0 3%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
