@@ -58,7 +58,7 @@ body .main .container .text {
 body .main .container .valor {
   border-radius: 12px;
   background-color: var(--Very-pale-blue);
-  height: 60px;
+  height: 9%;
   margin: 0 30px 10px 30px;
   padding: 10px;
   display: flex;
@@ -84,8 +84,9 @@ body .main .container .valor .charge {
   margin: 0 20px;
 }
 body .main .container .btn {
-  margin: 20px 30px;
-  width: 390px;
+  display: block;
+  margin: 20px auto;
+  width: 90%;
   border-radius: 15px;
   height: 60px;
   background-color: var(--Bright-blue);
@@ -116,6 +117,38 @@ body .main .container .final {
 }
 body .main .container .final a {
   font-size: 10px;
+}
+
+@media (max-width: 375px) {
+  body .main {
+    height: 1000px;
+  }
+  body .main .container {
+    width: 95%;
+    height: 600px;
+  }
+  body .main .container .img-principal {
+    height: 180px;
+  }
+  body .main .container .title {
+    margin: 20px 0 0;
+    font-size: 27px;
+  }
+  body .main .container .text {
+    margin: 5% 5%;
+  }
+  body .main .container .valor {
+    margin: 0 5% 5% 5%;
+  }
+  body .main .container .valor .icon-music {
+    margin: 0 3%;
+  }
+  body .main .container .valor .valor-text .valor-annual {
+    font-size: 16px;
+  }
+  body .main .container .valor .charge {
+    margin: 0 3%;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
